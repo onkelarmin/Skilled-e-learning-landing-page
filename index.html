@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Skilled e-learning landing page</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="nav header__nav">
+          <a href="index.html"
+            ><img src="./assets/logo-dark.svg" alt="logo of skilled"
+          /></a>
+          <a class="btn btn--secondary" href="#">Get Started</a>
+        </nav>
+        <div class="hero">
+          <div class="hero__content flow-content">
+            <h1 class="hero__title">Maximize skill, minimize budget</h1>
+            <p>
+              Our modern courses across a range of in-demand skills will give
+              you the knowledge you need to live the life you want.
+            </p>
+            <a href="#" class="btn btn--primary">Get Started</a>
+          </div>
+          <picture>
+            <source
+              media="(min-width: 960px)"
+              srcset="
+                assets/image-hero-desktop.webp    1046w,
+                assets/image-hero-desktop.png     1046w,
+                assets/image-hero-desktop@2x.webp 2092w,
+                assets/image-hero-desktop@2x.png  2092w
+              "
+              sizes="50vw"
+            />
+            <source
+              media="(min-width:600px)"
+              srcset="
+                assets/image-hero-tablet.webp     695w,
+                assets/image-hero-tablet.png      695w,
+                assets/image-hero-tablet@2x.webp 1390w,
+                assets/image-hero-tablet@2x.png  1390w
+              "
+              sizes="50vw"
+            />
+            <source
+              srcset="
+                assets/image-hero-mobile.webp    435w,
+                assets/image-hero-mobile.png     435w,
+                assets/image-hero-mobile@2x.webp 870w,
+                assets/image-hero-mobile@2x.png  870w
+              "
+            />
+            <img
+              class="hero__img"
+              src="./assets/image-hero-desktop.png"
+              alt="A female student with a mug studying in front of a laptop"
+            />
+          </picture>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="courses">
+        <div class="grid container">
+          <div class="courses__intro bg-grad-primary">
+            <h2 class="section-title">Check out our most popular courses!</h2>
+          </div>
+          <article class="course">
+            <img
+              class="course__logo"
+              src="./assets/icon-animation.svg"
+              alt=""
+            />
+            <h3 class="course__title">Animation</h3>
+            <p class="course__text">
+              Learn the latest animation techniques to create stunning motion
+              design and captivate your audience.
+            </p>
+            <a href="#" class="course__btn">Get Started</a>
+          </article>
+          <article class="course">
+            <img class="course__logo" src="./assets/icon-design.svg" alt="" />
+            <h3 class="course__title">Design</h3>
+            <p class="course__text">
+              Create beautiful, usable interfaces to help shape the future of
+              how the web looks.
+            </p>
+            <a href="#" class="course__btn">Get Started</a>
+          </article>
+          <article class="course">
+            <img
+              class="course__logo"
+              src="./assets/icon-photography.svg"
+              alt=""
+            />
+            <h3 class="course__title">Photography</h3>
+            <p class="course__text">
+              Explore critical fundamentals like lighting, composition, and
+              focus to capture exceptional photos.
+            </p>
+            <a href="#" class="course__btn">Get Started</a>
+          </article>
+          <article class="course">
+            <img class="course__logo" src="./assets/icon-crypto.svg" alt="" />
+            <h3 class="course__title">Crypto</h3>
+            <p class="course__text">
+              All you need to know to get started investing in crypto. Go from
+              beginner to advanced with this 54 hour course.
+            </p>
+            <a href="#" class="course__btn">Get Started</a>
+          </article>
+          <article class="course">
+            <img class="course__logo" src="./assets/icon-business.svg" alt="" />
+            <h3 class="course__title">Business</h3>
+            <p class="course__text">
+              A step-by-step playbook to help you start, scale, and sustain your
+              business without outside investment.
+            </p>
+            <a href="#" class="course__btn">Get Started</a>
+          </article>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="container">
+          <nav class="nav footer__nav">
+            <a href="index.html"
+              ><img src="./assets/logo-light.svg" alt="logo of skilled"
+            /></a>
+            <a class="btn btn--primary-inverted" href="#">Get Started</a>
+          </nav>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
